@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 3em 0;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+h2 {
+  transition: 0.4 ease;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #b96bac;
+}
+
+header,
+section {
+  padding: 4em 0;
+  overflow-x: hidden;
+}
+
+.bg-primary {
+  background-color: #e4e4e6;
+  color: black;
+}
+
+.bg-secondary {
+  background-color: burlywood;
+  color: crimson;
+}
+
+.bg-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2em 0;
+}
+
+.site-header {
+  background-color: black;
+  padding: 3em;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/aaron-burden-UIib0bAvWfs-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 77%;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.split {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sidebar-input {
+  width: 100%;
+  padding: 1.2rem 6rem 1.2rem 2rem;
+}
+
+.border-bottom {
+  border-bottom: 2.5px solid #b96bac;
+  display: inline-block;
+  padding-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.section-title-desktop {
+  display: none;
+}
+
+@media (min-width: 35em) {
+  header,
+  section {
+    padding: 6rem 0;
+  }
+
+  .primary-img img {
+    height: 23rem;
+    object-fit: cover;
+  }
+
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+
+  .container--lg {
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .section-title-mobile {
+    display: none;
+  }
+
+  .section-title-desktop {
+    display: inline-block;
+  }
+
+  .clip-path {
+    width: calc(100% + 25rem);
+    margin-top: 4em;
+    height: 100px;
+    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+  }
+}
